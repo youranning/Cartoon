@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/comic_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffff00"
+
+        >
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/attention"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/s1"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/week"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/s2"
+                android:textColor="#ffff00"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_cartoon_title_query"
+            android:background="#ffff00"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/comic_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

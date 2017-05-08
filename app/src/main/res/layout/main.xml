@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <fragment
+        android:layout_above="@+id/group"
+        android:id="@+id/one"
+        android:name="bwie.com.cartoon.frag.ComicsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      ></fragment>
+
+    <fragment        android:layout_above="@+id/group"
+
+        android:id="@+id/two"
+android:name="bwie.com.cartoon.frag.FindFragment"        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      ></fragment>
+
+    <fragment        android:layout_above="@+id/group"
+
+        android:id="@+id/three"
+android:name="bwie.com.cartoon.frag.VFragment"        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></fragment>
+
+    <fragment        android:layout_above="@+id/group"
+
+        android:id="@+id/four"
+android:name="bwie.com.cartoon.frag.MyFragment"        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     ></fragment>
+
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rg1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/comics"
+            android:gravity="center_horizontal" />
+
+        <RadioButton
+            android:id="@+id/rg2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/find"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rg3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/community"
+            android:gravity="center_horizontal" />
+
+        <RadioButton
+            android:id="@+id/rg4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/my"
+            android:gravity="center_horizontal" />
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/find_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/find_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="全部"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/find_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="少年"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/find_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="奇幻"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/find_four"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="爆笑"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/find_five"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="灵异"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/find_six"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="剧情"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/find_seven"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="都市"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/find_eight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="古风"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/find_nine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="日常"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/find_ten"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="治愈"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/find_eleven"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="恋爱"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/find_twelve"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/weekday"
+                android:button="@null"
+                android:gravity="center"
+                android:text="完结"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/find_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>
